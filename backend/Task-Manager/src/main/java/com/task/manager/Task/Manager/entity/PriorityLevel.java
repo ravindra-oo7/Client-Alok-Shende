@@ -26,7 +26,7 @@ public class PriorityLevel extends BaseEntity {
     @Column(name = "color_hex", length = 7)
     private String colorHex;
 
-    @Column(name = "rank", nullable = false, unique = true)
+    @Column(name = "`rank`", nullable = false, unique = true)
     private Integer rank;
 
     @OneToMany(mappedBy = "priorityLevel")
